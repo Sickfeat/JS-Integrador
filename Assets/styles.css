@@ -213,6 +213,14 @@ html {
     border-radius: 8px;
 }
 
+.cart__button:hover {
+    box-shadow: rgba(123, 168, 216, 0.733) 0px 20px 30px -10px;
+}
+
+.buy__button {
+    color: white;
+    background-color: rgb(73, 156, 156);
+}
 
 .overlay {
     position: absolute;

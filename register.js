@@ -4,7 +4,7 @@ const nameInput = document.querySelector(".form__name")
 const lastNameInput = document.querySelector(".form__last-name")
 const emailInput = document.querySelector(".form__email")
 const passwordInput = document.querySelector(".form__password")
-const modal = document.querySelector(".modal")
+const registerModal = document.querySelector(".modal")
 
 
 
@@ -89,8 +89,8 @@ const isPasswordSecure = (input) => {
 // !! FUNCION PARA MOSTRAR MODAL !! 
 
 const showModal = (msg) => {
-    modal.classList.add("active__modal")
-    modal.innerHTML = msg
+    registerModal.classList.add("active__modal")
+    registerModal.innerHTML = msg
     setTimeout(() => {
         modal.classList.remove("active__modal")
     }, 5000)

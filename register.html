@@ -6,23 +6,52 @@
     <title>Register</title>
     <link rel="stylesheet" href="/Assets/register-login.css">
     <link rel="stylesheet" href="/Assets/styles.css">
+    <link rel="stylesheet" href="/Assets/animation & mediaquerys.css">
 </head>
 <body>
     <header class="header">
         <div class="img__container">
-           <a href="/index.html"><img src="Assets/imgs/doc.png" alt="Logo" class="logo__img"></a> 
+            <a href="/index.html">
+                <img src="/Assets/imgs/doc.png" alt="Logo" class="logo__img">
+            </a>
         </div>
         <nav class="navbar">
             <ul class="navbar__list">
-                <li><a href="" class="navbar__list-a">Inicio</a></li>
-                <li><a href="" class="navbar__list-a">Nosotros</a></li>
-                <li><a href="" class="navbar__list-a">Productos</a></li>
-                <li><a href="" class="navbar__list-a">Contacto</a></li>
+                <li><a href="#section__hero" class="navbar__list-a">Inicio</a></li>
+                <li><a href="#section__about" class="navbar__list-a">Nosotros</a></li>
+                <li><a href="#section__products" class="navbar__list-a">Productos</a></li>
+                <li><a href="#section__contact" class="navbar__list-a">Contacto</a></li>
             </ul>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </nav>
-    </header>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="cart__icon">
+                <i class="fa-solid fa-cart-shopping"></i> 
+                <div class="cart__bubble">0</div>
+            </div>
 
+
+            <div class="cart">
+                <h2> Tus Objetos Magicos</h2>
+
+                <div class="cart__container">
+                </div>
+
+                <span class="border"></span>
+
+                <div class="cart__buy">
+                    <p class="cart__buy-p">Total: </p>
+                    <span class="cart__buy-span"></span>
+                </div>
+                <button class="cart__button buy__button">Comprar</button>
+                <button class="cart__button delete__button">Eliminar Carrito</button>
+            </div>
+            
+        </nav>
+        <div class="overlay"></div>
+    </header>
     <main id="register__main">
 
             <form action="" class="form register__form">
@@ -80,6 +109,7 @@
     </footer>
     
     <div class="modal"></div>
-<script src="register.js"></script>
+    <script src="https://kit.fontawesome.com/ac3b3104d6.js" crossorigin="anonymous"></script> 
+    <script src="register.js"></script>
 </body>
 </html>
