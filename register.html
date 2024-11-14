@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/Assets/register-login.css">
+    <link rel="stylesheet" href="/Assets/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="img__container">
+           <a href="/index.html"><img src="Assets/imgs/doc.png" alt="Logo" class="logo__img"></a> 
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li><a href="" class="navbar__list-a">Inicio</a></li>
+                <li><a href="" class="navbar__list-a">Nosotros</a></li>
+                <li><a href="" class="navbar__list-a">Productos</a></li>
+                <li><a href="" class="navbar__list-a">Contacto</a></li>
+            </ul>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </nav>
+    </header>
+
+    <main id="register__main">
+
+            <form action="" class="form register__form">
+                <h2>¡Registrate!</h2>
+                <div class="form__field">
+                    <!-- nombre de usuario -->
+                    <input type="text" name="" class="form__name" id="name" placeholder="Nombre"  autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="form__field">
+                    <!-- apellido de usuario -->
+                    <input type="text" name="" class="form__last-name" id="last__name" placeholder="Apellido" autocomplete="off">
+                    <small></small>
+                </div>
+                
+                <div class="form__field">
+                  <!-- correo electronico -->
+                    <input type="email" class="form__email" id="email" placeholder="Correo Electronico" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="form__field">
+                     <!-- contraseña -->
+                    <input type="password" class="form__password" id="password" placeholder="Contraseña">
+                    <small></small>
+                </div>
+
+                <!-- boton de submit -->
+                 <input type="submit" value="registrate" id="form__submit" class="register__submit">
+    </main>
+
+    <footer id="footer">
+        <div class="footer__contact">
+            <div class="footer__contact-top">
+                <h2>NUESTRAS REDES</h2>
+            </div>
+            <div class="footer__contact-bottom">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+    
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer__ilustraciones">
+            <h2>ILUSTRACIONES</h2>
+        <p><a href="https://www.instagram.com/lysergide_dream?igsh=a3E1YTNtMmQwcXNy" target="_blank" >hecho por: lysergide_dream</a></p>
+        </div>
+        <div class="footer__legales">
+            <div class="footer__legales-top">
+              <h2 class="footer__h2">LEGALES</h2>
+            </div>
+            <div class="footer__legales-bottom">
+              <a href="#" class="footer__legales-link">POLITICA DE PRIVACIDAD</a>
+              <a href="#" class="footer__legales-link">TERMINOS Y CONDICIONES DE USO</a>
+            </div>
+    </footer>
+    
+    <div class="modal"></div>
+<script src="register.js"></script>
+</body>
+</html>

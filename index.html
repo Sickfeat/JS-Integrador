@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Placeholder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/Assets/styles.css">
+<link rel="stylesheet" href="/Assets/animation & mediaquerys.css">
+</head>
+<body>
+    <header class="header">
+        <div class="img__container">
+            <a href="/index.html">
+                <img src="/Assets/imgs/doc.png" alt="Logo" class="logo__img">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li><a href="#section__hero" class="navbar__list-a">Inicio</a></li>
+                <li><a href="#section__about" class="navbar__list-a">Nosotros</a></li>
+                <li><a href="#section__products" class="navbar__list-a">Productos</a></li>
+                <li><a href="#section__contact" class="navbar__list-a">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="cart__icon">
+                <i class="fa-solid fa-cart-shopping"></i> 
+                <div class="cart__bubble">0</div>
+            </div>
+
+
+            <div class="cart">
+                <h2> Tus Objetos Magicos</h2>
+
+                <div class="cart__container">
+                </div>
+
+                <span class="border"></span>
+
+                <div class="cart__buy">
+                    <p class="cart__buy-p">Total: </p>
+                    <span class="cart__buy-span"></span>
+                </div>
+                <button class="cart__button buy__button">Comprar</button>
+                <button class="cart__button delete__button">Eliminar Carrito</button>
+            </div>
+            
+        </nav>
+        <div class="overlay"></div>
+    </header>
+<main>
+    <section id="section__hero">
+
+        <div class="hero__container">
+            <h1 class="hero__h1">La Apoteca de Paracelus</h1>
+            <p class="hero__p">La mejor tienda de todo Faerun dedicada a la venta de pociones y objetos magicos para diversos tipos de aventureros en apuros.
+            </p>
+            <div class="hero__btn-container">
+                <a href="/register.html" class="hero__btn" id="hero__register">Comienza hoy</a>
+            </div>
+
+        <div>
+
+        <div class="hero__card-container">
+                <div class="hero__card">
+                    <h2>Elige tus objetos magicos favoritos</h2>
+                    <p>Revisa de nuestra amplia seleccion de pociones y objetos magicos, y elige los que necesites.</p>
+                    <img src="/Assets/about-cards/poción - copia.png" alt="pocion" class="about__card-img">
+                </div>
+                <div class="hero__card">
+                    <h2>Despachamos tu pedido</h2>
+                    <p>Un mensajero especializado se encargara de llevar a maxima velocidad tu encomienda</p>
+
+                    <img src="/Assets/about-cards/zapa.png" alt="caballo corriendo" class="about__card-img">
+                </div>
+                <div class="hero__card">
+                    <h2>¡Llega a tu ubicacion!</h2>
+                    <p>hacemos envios a toda la Costa de las Espadas, con un servicio especializado de puerta a puerta </p>
+                    <img src="/Assets/about-cards/mapa-del-tesoro.png" alt="mapa del tesoro" class="about__card-img">
+                </div>
+        </div>
+
+    </section>
+
+    <section id="section__about">
+        <div class="about__container">
+            <h2>Conoce a el dueño del negocio, el Doctor Paracelus:</h2>
+            <div class="about__card">
+                <h3 class="about__h3">Sobre mi</h3>
+                <p class="about__p"> Soy el doctor Paracelus Asclepiades de Ibrea, nacido el año 1.457 DR(36 Años), de la ciudad de Waterdeep, Costa de las Espadas.</p>
+                <p class="about__p">Soy graduado con honores como alquimista, boticario y medico clinico, ejerzo desde que tengo 21 años, y mi clinica esta actualmente ubicada en el distrito del Puerto</p>
+                <p class="about__p">mis otras cualidades como Artifice incluyen conocimientos en los siguientes rublos y gremios tales como: Cerrajeria, herreria, orfebreria, topografia, cartografia, herreria naval y civil, metalurgica militar, ingenieria naval, escribano, secretario, desollador y carnicero.</p>
+            </div>
+
+            <div class="grid">
+                <div class="grid-item item-1">
+                </div>
+                <div class="grid-item item-2">
+                    <img src="" alt="">
+                </div>
+                <div class="grid-item item-3">
+                    <img src="" alt="">
+                </div>
+                <div class="grid-item item-4">
+                    <img src="" alt="">
+                </div>
+                <div class="grid-item item-5">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="section__products">
+        <div class="products__container">
+            <div class="categorie">
+                <h2>Categorias:</h2>
+                <div class="btns__container btns__container-types">
+                    <button class="category__type active" >Todas</button>
+                    <button class="category__type" data-category="arma">Armas</button>
+                    <button class="category__type" data-category="pocion">Pociones</button>
+                    <button class="category__type" data-category="libro">Libros</button>
+                    <button class="category__type" data-category="armadura">Armadura</button>
+                </div>
+            </div>
+
+            <div class="cards__container">
+            </div>
+            <div>
+                <button class="product__btn">Ver mas</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section__contact">
+        <div class="contact__container">
+            <div class="contact__card">
+                    <h2>¡Contactame!</h2>
+                    <p>Email:<a href=""> doctorparacelus@gmail.com</a></p>
+                    <p>Numero Telefonico: +44 11 123123</p>
+                    <p>Direccion: Callejon Craneo de Troll, Waterdeep, Faerun</p>
+
+            </div>
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601356.6814973775!2d-1.8667740306991263!3d53.93086377701722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487935b588f279e9%3A0xcba0fa0330518560!2sYorkshire%2C%20Reino%20Unido!5e0!3m2!1ses-419!2sar!4v1727215827044!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact__map-iframe"></iframe>
+            </div>
+
+        </div>
+    </section>
+  
+</main>
+
+<footer id="footer">
+    <div class="footer__contact">
+        <div class="footer__contact-top">
+            <h2>NUESTRAS REDES</h2>
+        </div>
+        <div class="footer__contact-bottom">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+    </div>
+    <div class="footer__ilustraciones">
+        <h2>ILUSTRACIONES</h2>
+    <p><a href="https://www.instagram.com/lysergide_dream?igsh=a3E1YTNtMmQwcXNy" target="_blank" >hecho por: lysergide_dream</a></p>
+    </div>
+    <div class="footer__legales">
+        <div class="footer__legales-top">
+          <h2 class="footer__h2">LEGALES</h2>
+        </div>
+        <div class="footer__legales-bottom">
+          <a href="#" class="footer__legales-link">POLITICA DE PRIVACIDAD</a>
+          <a href="#" class="footer__legales-link">TERMINOS Y CONDICIONES DE USO</a>
+        </div>
+</footer>
+
+<div class="modal"></div>
+
+<script src="/data.js"></script>
+<script src="/main.js"></script>
+    <script src="https://kit.fontawesome.com/ac3b3104d6.js" crossorigin="anonymous"></script>
+</body>
+</html>

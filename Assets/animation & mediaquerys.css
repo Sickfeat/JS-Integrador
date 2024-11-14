@@ -1,0 +1,251 @@
+.header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    backdrop-filter: blur(13.5px);
+    z-index: 1;
+}
+
+
+
+/* ! Animaciones, transiciones para SECTION HERO ! */
+/* ! Animaciones, transiciones para SECTION HERO ! */
+/* ! Animaciones, transiciones para SECTION HERO ! */
+
+#hero__register:hover {
+    color: black;
+    background-color: rgb(112, 233, 233);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hero__card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* !! SECTION CONTACT !! */
+/* !! SECTION CONTACT !! */
+/* !! SECTION CONTACT !! */
+
+.grid-item::after {
+    content: "";
+    display: flex;
+    background-color: rgba(27, 27, 27, 0.658);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.grid-item:hover::after {
+    opacity: 1;
+}
+
+.item-1::after {
+    content: "Posando para la ocasion";
+}
+
+.item-2::after {
+    content: "Descubriendo un nuevo elemento";
+}
+
+.item-3::after {
+    content: "Mejor empleado del mes";
+}
+
+.item-4::after {
+    content: "version gotica";
+}
+
+.item-5::after {
+    content: "Con mis compañeros de aventuras";
+}
+
+@media (max-width:768px) {
+
+
+    /* ! HEADER AND NAVBAR! */
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar__list {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background: rgba(19, 20, 21, 0.9);
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.4s ease-in-out;
+    }
+
+    .navbar__list.active {
+        left: 0;
+    }
+
+    .cart__item {
+        flex-direction: column;
+        min-width: 250px;
+    }
+
+    .cart__item img {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* !! SECTION CONTACT */
+    /* !! SECTION CONTACT */
+    /* !! SECTION CONTACT */
+
+    .about__card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .grid {
+        grid-template-rows: repeat(8, 100px);
+    }
+
+    .item-1 {
+        grid-column: 1;
+        grid-row: 1 /4;
+    }
+
+    .item-2 {
+        grid-column: 2 / 4;
+        grid-row: 1 /4;
+    }
+
+    .item-3 {
+        grid-column: 1;
+        grid-row: 4/6;
+    }
+
+    .item-4 {
+        grid-column: 2 /4;
+        grid-row: 4 /6;
+    }
+
+    .item-5 {
+        grid-column: 1/ 4;
+        grid-row: 6 /9;
+    }
+
+
+    /* !! FOOTER !! */
+    /* !! FOOTER !! */
+    /* !! FOOTER !! */
+
+    #footer {
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
+
+@media (max-width:576px) {
+
+    .logo__img {
+        height: 110px;
+    }
+
+    /* !! SECTION HERO !! */
+    /* !! SECTION HERO !! */
+    /* !! SECTION HERO !! */
+    .hero__card-container {
+        padding: 15px 20px;
+    }
+
+    .hero__btn-container {
+        flex-direction: column;
+    }
+
+
+    /* !! SECTION ABOUT !! */
+    /* !! SECTION ABOUT !! */
+    /* !! SECTION ABOUT !! */
+
+    .about__card {
+        width: 100%;
+    }
+
+    .about__p {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-rows: repeat(14, 100px);
+    }
+
+    .item-1 {
+        grid-column: 1/4;
+        grid-row: 1 /4;
+    }
+
+    .item-2 {
+        grid-column: 1 / 4;
+        grid-row: 4 /8;
+        background-position-x: 40%;
+    }
+
+    .item-3 {
+        grid-column: 1/4;
+        grid-row: 8/10;
+    }
+
+    .item-4 {
+        grid-column: 1 /4;
+        grid-row: 10 /12;
+    }
+
+    .item-5 {
+        grid-column: 1/ 4;
+        grid-row: 12 /15;
+        background-size: 800px 350px;
+        background-position-x: 45%;
+    }
+
+    /* !! SECTION CONTACT!!! */
+    /* !! SECTION CONTACT!!! */
+    /* !! SECTION CONTACT!!! */
+
+    .contact__card {
+        padding: 40px 20px;
+    }
+
+    .contact__map {
+        width: 50%;
+    }
+}
